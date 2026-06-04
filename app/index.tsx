@@ -193,9 +193,9 @@ export default function LoginScreen() {
             </View>
             <View style={styles.infoRow}>
               <Text style={styles.infoLabel}>Commit</Text>
-              <Text style={styles.infoValue}>{COMMIT_HASH}</Text>
+              <Text style={styles.infoValue}>36ec4ab</Text>
             </View>
-            
+
             <TouchableOpacity
               style={styles.btnFechar}
               onPress={() => setSobreVisivel(false)}
