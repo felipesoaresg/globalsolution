@@ -17,7 +17,7 @@ import {
 import { auth } from '../firebaseConfig';
 
 const API_URL = 'https://gs-ten-jade.vercel.app';
-const COMMIT_HASH = 'SEU_HASH_AQUI'; // rode: git rev-parse --short HEAD
+const COMMIT_HASH = '36ec4ab';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
@@ -193,7 +193,7 @@ export default function LoginScreen() {
             </View>
             <View style={styles.infoRow}>
               <Text style={styles.infoLabel}>Commit</Text>
-              <Text style={styles.infoValue}>36ec4ab</Text>
+              <Text style={styles.infoValue}>{COMMIT_HASH}</Text>
             </View>
 
             <TouchableOpacity
