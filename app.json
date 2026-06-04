@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "gs",
-    "slug": "gs",
+    "name": "UrbanSense",
+    "slug": "urbansense",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -22,7 +22,8 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.felipesoaresg.gs"
     },
     "web": {
       "bundler": "metro",
@@ -34,6 +35,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6a9159ab-be43-405e-9d9c-92ad8fc25212"
+      }
     }
   }
 }

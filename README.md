@@ -12,11 +12,11 @@
 
 | Nome | RM |
 |---|---|
-| João Vitor Lopes Santana | RM560781 |
 | Adão Yuri Ferreira da Silva | RM559223 |
 | Felipe Soares Gonçalves | RM559175 |
-| Julia Lima Rodrigues | RM559781 |
 | Henrique Batista de Souza | RM99742 |
+| João Vitor Lopes Santana | RM560781 |
+| Julia Lima Rodrigues | RM559781 |
 
 ---
 
@@ -43,56 +43,56 @@ O **Urban SP** conecta clima + mobilidade urbana + dados históricos para funcio
 
 ---
 
-## 📸 Telas
+## Telas
 
 <table>
   <tr>
     <td align="center">
       <strong>Tela 1 — Login</strong><br/>
-      <img src="" width="200" alt="Tela de Login"/>
+      <img src="assets/images/login.jpeg" width="200" alt="Tela de Login"/>
     </td>
     <td align="center">
       <strong>Tela 2 — Cadastro</strong><br/>
-      <img src="" width="200" alt="Tela de Cadastro"/>
+      <img src="assets/images/cadastro.jpeg" width="200" alt="Tela de Cadastro"/>
     </td>
     <td align="center">
       <strong>Tela 3 — Home</strong><br/>
-      <img src="" width="200" alt="Tela Home"/>
+      <img src="assets/images/home.jpeg" width="200" alt="Tela Home"/>
     </td>
   </tr>
   <tr>
     <td align="center">
       <strong>Tela 4 — Mapa</strong><br/>
-      <img src="" width="200" alt="Tela de Mapa"/>
+      <img src="assets/images/mapa.jpeg" width="200" alt="Tela de Mapa"/>
     </td>
     <td align="center">
       <strong>Tela 5 — Rotas</strong><br/>
-      <img src="" width="200" alt="Tela de Rotas"/>
+      <img src="assets/images/rotas.jpeg" width="200" alt="Tela de Rotas"/>
     </td>
     <td align="center">
       <strong>Tela 6 — Alertas</strong><br/>
-      <img src="" width="200" alt="Tela de Alertas"/>
+      <img src="assets/images/alerta.jpeg" width="200" alt="Tela de Alertas"/>
     </td>
   </tr>
   <tr>
     <td align="center">
       <strong>Tela 7 — Preferências</strong><br/>
-      <img src="" width="200" alt="Tela de Preferências"/>
+      <img src="assets/images/preferencias.jpeg" width="200" alt="Tela de Preferências"/>
     </td>
     <td align="center">
       <strong>Tela 8 — Perfil</strong><br/>
-      <img src="" width="200" alt="Tela de Perfil"/>
+      <img src="assets/images/user.jpeg" width="200" alt="Tela de Perfil"/>
     </td>
     <td align="center">
       <strong>Tela 9 — Sobre o App</strong><br/>
-      <img src="" width="200" alt="Tela Sobre o App"/>
+      <img src="assets/images/ap.jpeg" width="200" alt="Tela Sobre o App"/>
     </td>
   </tr>
 </table>
 
 ---
 
-## 🛠 Tecnologias
+## Tecnologias
 
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native"/>
@@ -104,5 +104,5 @@ O **Urban SP** conecta clima + mobilidade urbana + dados históricos para funcio
 ---
 
 <p align="center">
-  Desenvolvido para a Global Solution — FIAP 2025
+  Desenvolvido para a Global Solution — FIAP 2026
 </p>
