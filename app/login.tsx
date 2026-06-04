@@ -3,15 +3,15 @@ import { router } from 'expo-router';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { useState } from 'react';
 import {
-    ActivityIndicator,
-    KeyboardAvoidingView,
-    Platform,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  ActivityIndicator,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import { auth } from '../firebaseConfig';
 
@@ -74,7 +74,6 @@ export default function CadastroScreen() {
       const dados = await response.json();
       console.log('Resposta da API:', dados);
 
-      // Mostra tela de sucesso e redireciona após 2s
       setSucesso(true);
       setTimeout(() => router.replace('/'), 2000);
 
@@ -113,7 +112,7 @@ export default function CadastroScreen() {
           <View style={styles.logoIcon}>
             <MaterialCommunityIcons name="city" size={28} color="#0a2a1a" />
           </View>
-          <Text style={styles.logoTitle}>Urban SP</Text>
+          <Text style={styles.logoTitle}>UrbanSense</Text>
         </View>
 
         <Text style={styles.titulo}>Criar conta</Text>
