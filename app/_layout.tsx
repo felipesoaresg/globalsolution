@@ -17,13 +17,24 @@ const queryClient = new QueryClient({
 
 export default function RootLayout() {
   useEffect(() => {
+    let isFirstCall = true;
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        router.replace('/home' as any);
-      } else {
+      if (isFirstCall) {
+        isFirstCall = false;
+        if (user) {
+          router.replace('/home' as any);
+        } else {
+          router.replace('/' as any);
+        }
+        return;
+      }
+
+      if (!user) {
         router.replace('/' as any);
       }
     });
+
     return unsubscribe;
   }, []);
 
@@ -32,6 +43,7 @@ export default function RootLayout() {
       <SafeAreaProvider>
         <StatusBar style="light" backgroundColor="#0d1117" />
         <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="index" />
           <Stack.Screen name="login" />
           <Stack.Screen name="perfil" />
           <Stack.Screen name="alertas" />
