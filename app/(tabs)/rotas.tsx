@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useApi } from '../../hook/useApi';
 import type { AnaliseNivel, AnaliseRota, CriarRotaData, EditarRotaData, Rota } from '../../types/useTypes';
 
@@ -19,6 +20,7 @@ const LINHAS = ['L1','L2','L3','L4','L5','L7','L8','L9','L10','L11','L12','L13']
 export default function RotasScreen() {
   const { obterRotas, novaRota, atualizarRota, removerRota, obterAnaliseRota } = useApi();
   const queryClient = useQueryClient();
+  const insets = useSafeAreaInsets();
 
   const [modalVisivel, setModalVisivel] = useState(false);
   const [salvando, setSalvando] = useState(false);
@@ -103,7 +105,7 @@ export default function RotasScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={[styles.header, { marginTop: insets.top + 16 }]}>
         <Text style={styles.headerTitle}>Rotas favoritas</Text>
         <TouchableOpacity style={styles.fab} onPress={() => abrirModal()}>
           <Ionicons name="add" size={20} color="#0a2a1a" />
@@ -161,7 +163,7 @@ export default function RotasScreen() {
 
       <Modal visible={modalVisivel} transparent animationType="slide">
         <View style={styles.modalOverlay}>
-          <View style={styles.modalBox}>
+          <View style={[styles.modalBox, { paddingBottom: insets.bottom + 20 }]}>
             <View style={styles.modalHeader}>
               <Text style={styles.modalTitle}>{editando ? 'Editar rota' : 'Nova rota'}</Text>
               <TouchableOpacity onPress={() => setModalVisivel(false)}>
@@ -215,7 +217,7 @@ export default function RotasScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#0d1117', padding: 16 },
-  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, marginTop: 48 },
+  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 },
   headerTitle: { fontSize: 18, fontWeight: '600', color: '#fff' },
   fab: { width: 36, height: 36, borderRadius: 10, backgroundColor: '#3DD68C', alignItems: 'center', justifyContent: 'center' },
   loading: { flex: 1, justifyContent: 'center', alignItems: 'center' },
