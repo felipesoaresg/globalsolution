@@ -14,6 +14,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { auth } from '../firebaseConfig';
 
 const API_URL = 'https://gs-ten-jade.vercel.app';
@@ -26,6 +27,7 @@ export default function LoginScreen() {
   const [carregando, setCarregando] = useState(false);
   const [erro, setErro] = useState('');
   const [sobreVisivel, setSobreVisivel] = useState(false);
+  const insets = useSafeAreaInsets();
 
   const handleLogin = async () => {
     setErro('');
@@ -48,7 +50,7 @@ export default function LoginScreen() {
         },
       });
 
-      router.replace('/' as any);
+      router.replace('/home' as any);
 
     } catch (e: any) {
       switch (e.code) {
@@ -168,7 +170,7 @@ export default function LoginScreen() {
 
       <Modal visible={sobreVisivel} transparent animationType="slide">
         <View style={styles.modalOverlay}>
-          <View style={styles.modalBox}>
+          <View style={[styles.modalBox, { paddingBottom: insets.bottom + 20 }]}>
             <View style={styles.modalHeader}>
               <Text style={styles.modalTitle}>Sobre o app</Text>
               <TouchableOpacity onPress={() => setSobreVisivel(false)}>
