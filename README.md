@@ -37,9 +37,9 @@ O **Urban SP** conecta clima + mobilidade urbana + dados históricos para funcio
 
 | | Link |
 |---|---|
-| 🎥 **Vídeo** | [Assistir]() |
+| 🎥 **Vídeo** | [Assistir](https://youtu.be/3f-rpVBPfoY?si=5uiuqRiPsSfSKRvR) |
 | 🌐 **API** | [gs-ten-jade.vercel.app](https://gs-ten-jade.vercel.app) |
-| 📦 **Firebase App Distribution** | [Acessar]() |
+| 📦 **Firebase App Distribution** | [Acessar](https://appdistribution.firebase.dev/i/4966dfe01c612628) |
 
 ---
 
