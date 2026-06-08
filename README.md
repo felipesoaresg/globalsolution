@@ -22,7 +22,7 @@
 
 ## Sobre o Projeto
 
-O **Urban SP** conecta clima + mobilidade urbana + dados históricos para funcionar como um assistente inteligente da cidade. O app ajuda os usuários a planejarem melhor o dia com:
+O **UrbanSense** conecta clima + mobilidade urbana + dados históricos para funcionar como um assistente inteligente da cidade. O app ajuda os usuários a planejarem melhor o dia com:
 
 - 🌧 Previsão de chuva e risco de alagamento por região
 - 🚇 Alertas de impacto nas linhas de metrô e CPTM
